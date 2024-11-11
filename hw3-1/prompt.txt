@@ -1,0 +1,8 @@
+1.使用 Python 語言並引入 NumPy、sklearn 及 Matplotlib 套件，以進行數據生成、建模及視覺化。
+2.首先，產生300個隨機數變量 X，範圍在0到1000之間，並生成二元標籤 Y：當 X 值位於500到800之間時為1，否則為0。
+3.將數據拆分為訓練集和測試集，測試集比例為20%。
+4.使用 Logistic Regression 和 Support Vector Machine (SVM) 兩種模型進行分類預測，並基於 X 的數值大小對測試數據進行重新排序。
+5.繪製結果圖，顯示 Logistic Regression 和 SVM 的分類預測情況：
+每個圖表中，橫軸為 X 值，縱軸為標籤 y。
+使用不同顏色和標記符號區分真實標籤與兩種模型的預測結果。
+使用虛線顯示 Logistic Regression 和 SVM 的決策邊界。
