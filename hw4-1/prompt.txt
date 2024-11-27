@@ -1,0 +1,18 @@
+
+以下是用於生成您提供的完整程式碼的繁體中文描述提示，適用於自然語言程式生成模型：
+
+請幫我生成一段 Python 程式碼來完成以下任務：
+
+安裝必要的套件，包括 pycaret、pandas、numpy 和 matplotlib。
+從指定的網址下載 Titanic 資料集，將其命名為 train.csv 和 test.csv。
+載入 pandas 和 pycaret.classification，讀取資料集並檢視訓練資料的前幾行。
+對訓練集和測試集進行以下預處理：
+填補缺失值，包括 Age（使用中位數）、Embarked（使用眾數）和 Fare（使用中位數）。
+建立新特徵 FamilySize，定義為 SibSp 和 Parch 的和。
+刪除無用欄位：Name、Ticket 和 Cabin。
+將類別變數（Sex 和 Embarked）轉換為類別型資料。
+使用 PyCaret 設定分類模型環境，目標欄位為 Survived，並指定類別特徵。
+比較 16 種不同的機器學習模型，選擇表現最好的模型，並列印該模型的詳細資訊。
+對選擇的模型進行參數調整，評估調整後的模型性能。
+使用最終模型對測試集進行預測，並輸出結果至 submission.csv，其中包含 PassengerId 和預測的 Survived 欄位。
+請確保程式碼完整且可以直接執行，包含必要的註解說明。
