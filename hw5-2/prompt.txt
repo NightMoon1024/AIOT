@@ -1,0 +1,27 @@
+使用 TensorFlow 和 Keras，建立一個包含兩種神經網路架構（密集神經網路 Dense NN 和卷積神經網路 CNN）的程式碼，並整合 TensorBoard 用於模型訓練的可視化。以下是具體功能和步驟：
+
+載入 MNIST 數據集：從 TensorFlow 中載入手寫數字資料集，進行數據正規化，並將標籤轉換為 One-Hot 編碼格式。
+
+定義 Dense NN 模型：
+
+包括 Flatten、兩層 Dense 隱藏層和一個具有 softmax 激活函數的輸出層。
+將該模型編譯，設定損失函數為 categorical_crossentropy，優化器為 Adam。
+定義 CNN 模型：
+
+包括一個卷積層（使用 16 個 3x3 濾波器）和一個最大池化層，後接 Flatten 和全連接層。
+編譯模型，設定相同的損失函數和優化器。
+整合 TensorBoard：
+
+設定兩個不同的日誌目錄，分別記錄 Dense NN 和 CNN 的訓練數據。
+使用 TensorBoard 回呼函數，啟用圖表記錄功能（write_graph=True）。
+模型訓練與評估：
+
+分別訓練 Dense NN 和 CNN，使用 80% 的訓練數據進行訓練，20% 用於驗證，設定 10 個訓練週期（epochs）和批量大小（batch size）為 64。
+評估兩個模型在測試數據上的準確率。
+模型結構可視化：
+
+使用 plot_model 方法將兩個模型的結構保存為 PNG 圖片，並顯示出每層的形狀和名稱。
+啟用 TensorBoard：
+
+使用 %tensorboard --logdir logs 命令，啟動 TensorBoard 並查看模型訓練過程與計算圖。
+此程式碼可幫助了解基於 TensorFlow 的簡化深度學習模型訓練流程，並提供良好的可視化支援。

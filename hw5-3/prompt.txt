@@ -1,0 +1,5 @@
+Hw5-3: Cifar 圖片分類 vgg16, vgg19  pretrained (tf.keras or pytorch lightning)
+編譯環境：Colab T4 GPU
+請用繁體中文回答 
+確保模型有正確評估
+確保有安裝需要的套件
