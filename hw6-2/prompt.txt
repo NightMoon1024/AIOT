@@ -1,0 +1,10 @@
+Prompt:
+"請在 Google Colab 環境下，使用 Hugging Face 提供的 transformers 套件，快速建立一個簡單的 情緒分析 (Sentiment Analysis) AI 應用程式。需求如下：
+
+安裝套件：安裝 transformers 和 datasets。
+導入模型：使用 Hugging Face 的 pipeline 方法，選用預設英語模型進行情緒分析。
+測試推論：輸入測試文字，取得分析結果。
+支援中文：切換為支援中文的預訓練模型，例如 uer/roberta-base-finetuned-jd-binary-chinese。
+保存結果：將結果輸出並保存為 output.json 文件。
+請提供完整、可執行的 Python 程式碼，確保可以直接在 Colab 上運行，並附帶輸出示例。"
+
